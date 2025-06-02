@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Registro de Docente - ULEAM</title>
+<link href="CSS.css" rel="stylesheet"/>
+<script defer="" src="JAVASCRIPT REGISTRO.js"></script>
+</head>
+<body style="background-color: #f2f6fa;">
+<h1>REGISTRO PARA DOCENTES</h1>
+
+<div class="login-box">
+<div class="image-section">
+<img alt="Registro Docente" src="img/logo.png"/>
+<h3>Formulario de Registro - Sistema ULEAM</h3>
+</div>
+<form id="registroForm">
+<div class="form-group">
+<input id="nombre" placeholder="Nombres y apellidos" required="" type="text"/>
+</div>
+<div class="form-group">
+<input id="cedula" placeholder="Cédula de identidad" required="" type="text"/>
+</div>
+<div class="form-group">
+<input id="correo" placeholder="Correo institucional" required="" type="email"/>
+</div>
+<div class="form-group">
+<input id="facultad" placeholder="Facultad" required="" type="text"/>
+</div>
+<div class="form-group">
+<select id="categoria" required="">
+<option value="">Seleccione categoría actual</option>
+<option value="Auxiliar">Auxiliar</option>
+<option value="Agregado">Agregado</option>
+<option value="Titular">Titular</option>
+</select>
+</div>
+<div class="form-group">
+<input id="titulo" placeholder="Título académico" required="" type="text"/>
+</div>
+<div class="form-group">
+<input id="clave" placeholder="Contraseña de acceso" required="" type="password"/>
+</div>
+<button type="submit">Registrar</button>
+</form>
+<div class="forgot">
+<a href="HTML LOGIN.html">¿Ya tienes cuenta? Inicia sesión</a>
+</div>
+</div>
+</body>
+</html>

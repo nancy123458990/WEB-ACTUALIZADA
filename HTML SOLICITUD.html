@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Solicitud de Promoción/Recategorización</title>
+<link href="CSS.css" rel="stylesheet"/>
+<script defer="" src="JAVASCRIPT SOLICITUD.js"></script>
+</head>
+<body style="background-color: #f2f6fa;">
+<h1>FORMULARIO PARA SOLICITUD</h1>
+<div class="login-box">
+<div class="image-section">
+<img alt="Solicitud" src="img/logo.png"/>
+</div>
+<form id="solicitudForm">
+<div class="form-group">
+<label for="tipoTramite">Tipo de trámite:</label>
+<select id="tipoTramite" required="">
+<option value="">Seleccione</option>
+<option value="Promoción">Promoción</option>
+<option value="Recategorización">Recategorización</option>
+</select>
+</div>
+<div class="form-group">
+<label for="convocatoria">Convocatoria vigente:</label>
+<select id="convocatoria">
+<option value="">Seleccione</option>
+<option value="Convocatoria 2025-I">Convocatoria 2025-I</option>
+<option value="Convocatoria 2025-II">Convocatoria 2025-II</option>
+</select>
+</div>
+<div class="form-group">
+<label for="categoriaActual">Categoría actual:</label>
+<select id="categoriaActual" required="">
+<option value="">Seleccione</option>
+<option value="Auxiliar">Auxiliar</option>
+<option value="Agregado">Agregado</option>
+<option value="Titular">Titular</option>
+</select>
+</div>
+<div class="form-group">
+<label for="categoriaPostula">Categoría a la que postula:</label>
+<select id="categoriaPostula" required="">
+<option value="">Seleccione</option>
+<option value="Auxiliar">Auxiliar</option>
+<option value="Agregado">Agregado</option>
+<option value="Titular">Titular</option>
+</select>
+</div>
+<div class="form-group">
+<label for="fechaNombramiento">Fecha de último nombramiento:</label>
+<input id="fechaNombramiento" required="" type="date"/>
+</div>
+<div class="form-group">
+<label for="tesisDirigidas">Número de tesis dirigidas:</label>
+<input id="tesisDirigidas" min="0" required="" type="number"/>
+</div>
+<div class="form-group">
+<label>Adjuntar documentos requeridos:</label><br/>
+<input id="cv" required="" type="file"/><br/><small>CV actualizado</small><br/><br/>
+<input id="titulo" required="" type="file"/><br/><small>Título académico</small><br/><br/>
+<input id="certificados" required="" type="file"/><br/><small>Certificados</small><br/><br/>
+<input id="publicaciones" type="file"/><br/><small>Publicaciones (opcional)</small><br/><br/>
+<input id="otrosDocumentos" multiple="" type="file"/><br/><small>Otros documentos adicionales</small>
+</div>
+<div class="form-group">
+<label for="otrosMeritos">Otros méritos (publicaciones, congresos, etc.):</label>
+<textarea id="otrosMeritos" rows="4"></textarea>
+</div>
+<div class="form-group">
+<textarea id="comentarios" placeholder="Comentarios adicionales" rows="4"></textarea>
+</div>
+<button type="submit">Enviar solicitud</button>
+</form>
+</div>
+</body>
+</html>
