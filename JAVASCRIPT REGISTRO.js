@@ -11,7 +11,7 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
 
   if (nombre && cedula && correo && facultad && categoria && titulo && clave) {
     alert("Registro exitoso. ¡Bienvenido!");
-    window.location.href = "index.html";
+    window.location.href = "HTML LOGIN.html";
   } else {
     alert("Por favor, complete todos los campos.");
   }
